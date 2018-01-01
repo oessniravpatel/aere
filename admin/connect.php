@@ -4,6 +4,7 @@
  session_start();
  // but I strongly suggest you to use PDO or MySQLi.
 // hiiiii aere
+// gcgsd kfsgh kjfbisbg kfjhiseg 
  $webstatus="local";  //production, qa, local
 
 if($webstatus=="production"){
