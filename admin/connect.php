@@ -3,7 +3,9 @@
  error_reporting( ~E_DEPRECATED & ~E_NOTICE );
  session_start();
  // but I strongly suggest you to use PDO or MySQLi.
-//hugftdxc
+
+
+
  $webstatus="local";  //production, qa, local
 
 if($webstatus=="production"){
