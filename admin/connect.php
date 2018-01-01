@@ -4,23 +4,40 @@
  session_start();
  // but I strongly suggest you to use PDO or MySQLi.
  
- $webstatus="developement";  //production, developement,local
+ $webstatus="local";  //production, qa, local
+
 if($webstatus=="production"){
+
     // not valid
-	define('DBHOST', 'PRDAERECourses.db.11797364.5bf.hostedresource.net');
-	define('DBUSER', 'PRDAERECourses');
-	define('DBPASS', 'Op3n3y3s@2017');
-	define('DBNAME', 'PRDAERECourses');
+
+                define('DBHOST', 'PRDAERECourses.db.11797364.5bf.hostedresource.net');
+
+                define('DBUSER', 'PRDAERECourses');
+
+                define('DBPASS', 'Op3n3y3s@2017');
+
+                define('DBNAME', 'PRDAERECourses');
+
 }else if($webstatus=="local"){
-	define('DBHOST', 'localhost');
-	define('DBUSER', 'root');
-	define('DBPASS', '');
-	define('DBNAME', 'aere');
-}else if($webstatus=="developement"){
-	define('DBHOST', 'localhost');
-	define('DBUSER', 'root');
-	define('DBPASS', '');
-	define('DBNAME', 'aere');
+
+                define('DBHOST', 'localhost');
+
+                define('DBUSER', 'root');
+
+                define('DBPASS', '');
+
+                define('DBNAME', 'aere');
+
+}else if($webstatus=="QA"){
+
+                define('DBHOST', 'QAAERECourses.db.11797364.a8d.hostedresource.net');
+
+                define('DBUSER', 'QAAERECourses');
+
+                define('DBPASS', 'Op3n3y3s@2017');
+
+                define('DBNAME', 'QAAERECourses');
+
 }
  
  $conn = mysql_connect(DBHOST,DBUSER,DBPASS);
